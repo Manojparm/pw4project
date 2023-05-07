@@ -1,0 +1,62 @@
+body{
+    background-color: aquamarine;
+}
+h1{
+    font-size:60px;
+    text-align:center;
+}
+
+.large-laptop,
+.for-large,
+.tablet-devices,
+.mobile-devices{
+    font-size:40px;
+    text-align:center;
+    display:none;
+}
+
+@media (max-width:1440px){
+    body{
+        background-color:green;
+    }
+    .large-laptop{
+        display:block;
+    }
+}
+
+@media (max-width:1024px){
+    body{
+        background-color:darkgoldenrod;
+    }
+    .for-large{
+        display:block;
+    }
+    .large-laptop{
+        display:none;
+    }
+
+}
+
+@media (max-width:768px){
+    body{
+        background-color:aqua;  
+    }
+    .tablet-devices{
+        display:block;
+    }
+    .for-large{
+        display:none;
+    }
+}
+
+@media (max-width:425px){
+     body{
+        background-color:brown;
+     }
+     .mobile-devices{
+        display:block;
+     }
+     .tablet-devices{
+        display:none;
+     }
+}
